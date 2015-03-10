@@ -1,0 +1,11 @@
+table
+  thead
+    th Time in
+    th Time out
+  tbody
+    - @details.each do |detail|
+      tr
+        td
+          == detail.time_in
+        td
+          == detail.time_out
