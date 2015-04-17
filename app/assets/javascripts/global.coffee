@@ -7,7 +7,7 @@ startRefresh = () ->
     ->
       location.reload()
       startRefresh()
-    10000
+    60000
   )
 
 startRefresh()
