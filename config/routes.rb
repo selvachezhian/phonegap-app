@@ -57,9 +57,11 @@ Rails.application.routes.draw do
   resources :externals do
     collection do
       get 'list'
+      get 'request_current_time'
 
       post 'time_in'
       post 'time_out'
+      post 'hit_http'
     end
   end
 

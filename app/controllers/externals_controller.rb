@@ -22,4 +22,16 @@ class ExternalsController < ApplicationController
     end
   end
 
+  def hit_http
+    respond_to do |format|
+      format.json { render json: { hit_status: 'Success' } }
+    end
+  end
+
+  def request_current_time
+    respond_to do |format|
+      format.json { render json: { current_time: Time.now } }
+    end
+  end
+
 end
