@@ -23,7 +23,7 @@ class ExternalsController < ApplicationController
   end
 
   def hit_http
-    puts "referrar url ---> #{request.referer}"
+    puts "referrar url ---> #{request.env}"
     respond_to do |format|
       format.json { render json: { hit_status: 'Success' } }
     end
